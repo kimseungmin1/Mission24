@@ -1,0 +1,178 @@
+<!-- 9월 -->
+
+
+<html>
+
+<head>
+    <title>Fitness Routine project</title>
+
+    <link rel="stylesheet" href="lib/Bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="lib/jQuery/jquery.ui.min.css" />
+    <link rel="stylesheet" href="assets/todo.css" />
+</head>
+
+
+<body class="well">
+    <div id="container">
+
+        <div id="header"> 9</div>
+
+        <div class="task-list">
+            <h3>Add a task</h3>
+            <form id="todo-form">
+                <input type="text" placeholder="제목" />
+                <textarea placeholder="Description"></textarea>
+                <input type="text" id="datepicker" placeholder="Due Date (dd/mm/yyyy)" />
+                <input type="button" class="btn btn-primary" value="Add Task" onclick="todo.add();" />
+            </form>
+
+            <input type="button" class="btn btn-primary" value="Clear Data" onclick="todo.clear();" />
+
+            <div id="delete-div">
+                Drag Here to Delete
+            </div>
+        </div>
+
+        <div class="task-list task-container" id="9-1">
+            <h3>1</h3>
+        </div>
+
+        <div class="task-list task-container" id="9-2">
+            <h3>2</h3>
+        </div>
+
+        <div class="task-list task-container" id="9-3">
+            <h3>3</h3>
+        </div>
+
+        <div class="task-list task-container" id="9-4">
+            <h3>4</h3>
+        </div>
+
+        <div class="task-list task-container" id="9-5">
+            <h3>5</h3>
+        </div>
+
+        <div class="task-list task-container" id="9-6">
+            <h3>6</h3>
+        </div>
+
+        <div class="task-list task-container" id="9-7">
+            <h3>7</h3>
+        </div>
+
+        <div class="task-list task-container" id="9-8">
+            <h3>8</h3>
+        </div>
+
+        <div class="task-list task-container" id="9-9">
+            <h3>9</h3>
+        </div>
+
+        <div class="task-list task-container" id="9-10">
+            <h3>10</h3>
+        </div>
+
+        <div class="task-list task-container" id="9-11">
+            <h3>11</h3>
+        </div>
+
+        <div class="task-list task-container" id="9-12">
+            <h3>12</h3>
+        </div>
+
+        <div class="task-list task-container" id="9-13">
+            <h3>13</h3>
+        </div>
+
+        <div class="task-list task-container" id="9-14">
+            <h3>14</h3>
+        </div>
+
+        <div class="task-list task-container" id="9-15">
+            <h3>15</h3>
+        </div>
+
+        <div class="task-list task-container" id="9-16">
+            <h3>16</h3>
+        </div>
+
+        <div class="task-list task-container" id="9-17">
+            <h3>17</h3>
+        </div>
+
+        <div class="task-list task-container" id="9-18">
+            <h3>18</h3>
+        </div>
+
+        <div class="task-list task-container" id="9-19">
+            <h3>19</h3>
+        </div>
+
+        <div class="task-list task-container" id="9-20">
+            <h3>20</h3>
+        </div>
+
+        <div class="task-list task-container" id="9-21">
+            <h3>21</h3>
+        </div>
+
+        <div class="task-list task-container" id="9-22">
+            <h3>22</h3>
+        </div>
+
+        <div class="task-list task-container" id="9-23">
+            <h3>23</h3>
+        </div>
+
+        <div class="task-list task-container" id="9-24">
+            <h3>24</h3>
+        </div>
+
+        <div class="task-list task-container" id="9-25">
+            <h3>25</h3>
+        </div>
+
+        <div class="task-list task-container" id="9-26">
+            <h3>26</h3>
+        </div>
+
+        <div class="task-list task-container" id="9-27">
+            <h3>27</h3>
+        </div>
+
+        <div class="task-list task-container" id="9-28">
+            <h3>28</h3>
+        </div>
+
+        <div class="task-list task-container" id="9-29">
+            <h3>29</h3>
+        </div>
+
+        <div class="task-list task-container" id="9-30">
+            <h3>30</h3>
+        </div>
+
+        <button id = "pre" onclick="location.href='8august.html'">August</button>
+        <button id = "next" onclick="location.href='10october.html'">Octobaer</button>
+
+
+        <div style="clear:both;"></div>
+        <script type="text/javascript" src="lib/jQuery/jquery.min.js"></script>
+        <script type="text/javascript" src="lib/Bootstrap/bootstrap.min.js"></script>
+        <script type="text/javascript" src="lib/jQuery/jquery.ui.min.js"></script>
+        <script type="text/javascript" src="assets/todo.js"></script>
+
+        <script type="text/javascript">
+            $("#datepicker").datepicker();
+            $("#datepicker").datepicker("option", "dateFormat", "dd/mm/yy");
+
+            $(".task-container").droppable();
+            $(".todo-task").draggable({ revert: "valid", revertDuration: 200 });
+            todo.init();
+        </script>
+
+    </div>
+</body>
+
+</html>

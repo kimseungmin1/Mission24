@@ -1,0 +1,181 @@
+<!-- 7월 -->
+
+
+<html>
+
+<head>
+    <title>Fitness Routine project</title>
+
+    <link rel="stylesheet" href="lib/Bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="lib/jQuery/jquery.ui.min.css" />
+    <link rel="stylesheet" href="assets/todo.css" />
+</head>
+
+
+<body class="well">
+    <div id="container">
+
+        <div id="header"> 7</div>
+
+        <div class="task-list">
+            <h3>Add a task</h3>
+            <form id="todo-form">
+                <input type="text" placeholder="제목" />
+                <textarea placeholder="Description"></textarea>
+                <input type="text" id="datepicker" placeholder="Due Date (dd/mm/yyyy)" />
+                <input type="button" class="btn btn-primary" value="Add Task" onclick="todo.add();" />
+            </form>
+
+            <input type="button" class="btn btn-primary" value="Clear Data" onclick="todo.clear();" />
+
+            <div id="delete-div">
+                Drag Here to Delete
+            </div>
+        </div>
+
+        <div class="task-list task-container" id="7-1">
+            1</h3>
+        </div>
+
+        <div class="task-list task-container" id="7-2">
+            2</h3>
+        </div>
+
+        <div class="task-list task-container" id="7-3">
+            3</h3>
+        </div>
+
+        <div class="task-list task-container" id="7-4">
+            4</h3>
+        </div>
+
+        <div class="task-list task-container" id="7-5">
+            5</h3>
+        </div>
+
+        <div class="task-list task-container" id="7-6">
+            6</h3>
+        </div>
+
+        <div class="task-list task-container" id="7-7">
+            7</h3>
+        </div>
+
+        <div class="task-list task-container" id="7-8">
+            8</h3>
+        </div>
+
+        <div class="task-list task-container" id="7-9">
+            9</h3>
+        </div>
+
+        <div class="task-list task-container" id="7-10">
+            10</h3>
+        </div>
+
+        <div class="task-list task-container" id="7-1">
+            11</h3>
+        </div>
+
+        <div class="task-list task-container" id="7-12">
+            12</h3>
+        </div>
+
+        <div class="task-list task-container" id="7-13">
+            13</h3>
+        </div>
+
+        <div class="task-list task-container" id="7-14">
+            14</h3>
+        </div>
+
+        <div class="task-list task-container" id="7-15">
+            15</h3>
+        </div>
+
+        <div class="task-list task-container" id="7-16">
+            16</h3>
+        </div>
+
+        <div class="task-list task-container" id="7-17">
+            17</h3>
+        </div>
+
+        <div class="task-list task-container" id="7-18">
+            18</h3>
+        </div>
+
+        <div class="task-list task-container" id="7-19">
+            19</h3>
+        </div>
+
+        <div class="task-list task-container" id="7-20">
+            20</h3>
+        </div>
+
+        <div class="task-list task-container" id="7-21">
+            21</h3>
+        </div>
+
+        <div class="task-list task-container" id="7-22">
+            22</h3>
+        </div>
+
+        <div class="task-list task-container" id="7-23">
+            23</h3>
+        </div>
+
+        <div class="task-list task-container" id="7-24">
+            24</h3>
+        </div>
+
+        <div class="task-list task-container" id="7-25">
+            25</h3>
+        </div>
+
+        <div class="task-list task-container" id="7-26">
+            26</h3>
+        </div>
+
+        <div class="task-list task-container" id="7-27">
+            27</h3>
+        </div>
+
+        <div class="task-list task-container" id="7-28">
+            28</h3>
+        </div>
+
+        <div class="task-list task-container" id="7-29">
+            29</h3>
+        </div>
+
+        <div class="task-list task-container" id="7-30">
+            30</h3>
+        </div>
+
+        <div class="task-list task-container" id="7-31">
+            31</h3>
+        </div>
+
+        <button id = "pre" onclick="location.href='6june.html'">June</button>
+        <button id = "next" onclick="location.href='8august.html'">August</button>
+
+        <div style="clear:both;"></div>
+        <script type="text/javascript" src="lib/jQuery/jquery.min.js"></script>
+        <script type="text/javascript" src="lib/Bootstrap/bootstrap.min.js"></script>
+        <script type="text/javascript" src="lib/jQuery/jquery.ui.min.js"></script>
+        <script type="text/javascript" src="assets/todo.js"></script>
+
+        <script type="text/javascript">
+            $("#datepicker").datepicker();
+            $("#datepicker").datepicker("option", "dateFormat", "dd/mm/yy");
+
+            $(".task-container").droppable();
+            $(".todo-task").draggable({ revert: "valid", revertDuration: 200 });
+            todo.init();
+        </script>
+
+    </div>
+</body>
+
+</html>
